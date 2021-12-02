@@ -18,6 +18,7 @@ Lua
 Raku? (was Perl)
 Smalltalk
 Ballerina ?
+Scala
 
 #### Used once or twice
 Prolog
