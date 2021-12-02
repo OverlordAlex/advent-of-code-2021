@@ -24,7 +24,6 @@ Prolog
 Nim
 F#
 Javascript
-AWK
 Go
 Dart
 Ruby
@@ -36,6 +35,7 @@ Haskell
 #### Familiar
 Python2.7/3.10 
 Bash
+~~AWK~~
 Java/Kotlin/Groovy
 C
 
@@ -45,5 +45,16 @@ Wait, I have to leave 6 spaces at the start of lines because of PUNCH CARDS. How
 Fortran doesn't have dynamic memory (go figure), so we really have to stream the file. The question is pretty easy, however Fortran was surprisingly easy to use!
 
 Installing gfortran on a mac was awful, but only because it required xcode, and xcode required a whole new OS upgrade. Once installed compiling and running was a breeze.
+    gfortran day1.f -o day1.out && ./day1.out
 
 --------
+
+## Day 2 - AWK (https://www.gnu.org/software/gawk/manual/gawk.html)
+AWK is super straightforward. I first used it in university and I recall writing rather complex stream processing programs. It's a lot more powerful than what people normally use it for day to day
+
+The problem is a perfect match for AWK - it's pattern matching and then stream processing. Absolutly trivial
+
+No installation necessary, AWK is a corelib and I weep for any system that neglects to include it. /insert GNU+Linux copy-pasta here
+
+---------
+
