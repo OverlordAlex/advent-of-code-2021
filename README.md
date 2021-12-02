@@ -8,8 +8,8 @@ For each language I'll be posting my thoughts about
 * How much more difficult the language made the task
 * Installation, and compilation/interpretation experience
 
-# Possible languages
-## New
+### Possible languages
+#### New
 ~~4tran~~
 COBOL ?
 BASIC
@@ -19,7 +19,7 @@ Raku? (was Perl)
 Smalltalk
 Ballerina ?
 
-## Used once or twice
+#### Used once or twice
 Prolog
 Nim
 F#
@@ -33,7 +33,7 @@ Swift
 Rust
 Haskell
 
-## Familiar
+#### Familiar
 Python2.7/3.10 
 Bash
 Java/Kotlin/Groovy
@@ -45,4 +45,5 @@ Wait, I have to leave 6 spaces at the start of lines because of PUNCH CARDS. How
 Fortran doesn't have dynamic memory (go figure), so we really have to stream the file. The question is pretty easy, however Fortran was surprisingly easy to use!
 
 Installing gfortran on a mac was awful, but only because it required xcode, and xcode required a whole new OS upgrade. Once installed compiling and running was a breeze.
+
 --------
