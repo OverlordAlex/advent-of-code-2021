@@ -11,7 +11,7 @@ For each language I'll be posting my thoughts about
 ### Possible languages
 #### New
 ~~4tran~~
-COBOL ?
+~~COBOL~~
 BASIC
 Julia
 Lua
@@ -62,3 +62,12 @@ No installation necessary, AWK is a corelib and I weep for any system that negle
     $ awk -f day2.awk day2.in
 ---------
 
+## Day 3 - COBOL (https://gnucobol.sourceforge.io/)
+COBOL was not as fun as Fortran. Same punch card origins but the syntax felt so much worse... so much more... business. I see now that it's reputation may be deserved...
+
+Problem was a bit tricky - I hit some infinite loops because my counter was 1 digit instead of 2, so that was fun.
+
+With gnuCOBOL it was easy to install using homebrew, and incridbly easy to compile and run
+
+    $ cobc -x day3.cob && ./day3 
+--------
