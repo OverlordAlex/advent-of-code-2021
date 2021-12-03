@@ -65,9 +65,9 @@ No installation necessary, AWK is a corelib and I weep for any system that negle
 ## Day 3 - COBOL (https://gnucobol.sourceforge.io/)
 COBOL was not as fun as Fortran. Same punch card origins but the syntax felt so much worse... so much more... business. I see now that it's reputation may be deserved...
 
-Problem was a bit tricky - I hit some infinite loops because my counter was 1 digit instead of 2, so that was fun.
+Problem was a bit tricky - I hit some infinite loops because my counter was 1 digit instead of 2, so that was fun. Part2 was even harder - rather than figure out functions and/or pointers I just copy-pasted the code. I also managed to hit a SIGBUS which is actually new for me!
 
 With gnuCOBOL it was easy to install using homebrew, and incridbly easy to compile and run
 
-    $ cobc -x day3.cob && ./day3 
+    $ cobc -x day3.cob -o day3.out && ./day3.out
 --------
