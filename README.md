@@ -12,8 +12,8 @@ For each language I'll be posting my thoughts about
 #### New
 ~~4tran~~
 ~~COBOL~~
-BASIC
 ~~Julia~~
+BASIC
 Lua
 Raku? (was Perl)
 Smalltalk
@@ -35,9 +35,9 @@ Rust
 Haskell
 
 #### Familiar
+~~AWK~~
 Python2.7/3.10 
 Bash
-~~AWK~~
 Java/Kotlin/Groovy
 C
 
