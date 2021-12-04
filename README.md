@@ -13,7 +13,7 @@ For each language I'll be posting my thoughts about
 ~~4tran~~
 ~~COBOL~~
 BASIC
-Julia
+~~Julia~~
 Lua
 Raku? (was Perl)
 Smalltalk
@@ -71,3 +71,14 @@ With gnuCOBOL it was easy to install using homebrew, and incridbly easy to compi
 
     $ cobc -x day3.cob -o day3.out && ./day3.out
 --------
+
+## Day 4 - Julia (https://julialang.org/)
+Julia felt like it was trying to be both type-safe while still being flexible, and it ended up doing neither very well. Variable scoping feels inconsistent and weird. The language itself feels like a patchwork of idioms and at no point did I feel like I was writing idiomatic Julia, however looking on StackOverflow I could tell what was elegant and what 95% of people (incl. myself) were writing.
+
+I chose Julia because I seemed to recall all my data-processing friends loved it for how it handled arrays, and it did okay. I still struggled with the subscripting feeling inconsistent, and the types being difficult to wrangle when working in multiple dimensions. However by the end I found a rythym and fortunately Part2 was trivial.
+
+It's always nice when the brew-install just works (looking at you Factor). Running it was a breeze, and the interpreter was _generally_ helpful.
+
+    $ julia day4.jl
+--------
+
