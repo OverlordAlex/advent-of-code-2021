@@ -35,12 +35,17 @@ function checkwin(card::BitMatrix, row::Int64, col::Int64, call)::Bool
     false
 end
 
+global wins = Set()
 while !isempty(calls)
   call = popfirst!(calls)
   tups = numberHash[call]
   for (card, row_idx, col_idx) in numberHash[call]
     cards[card][row_idx, col_idx] = 1
-    if checkwin(cards[card], row_idx, col_idx, call)
+    if !(card in wins) && checkwin(cards[card], row_idx, col_idx, call)
+        push!(wins, card)
+        if length(wins) != cardCount
+            continue
+        end
         total = 0
         for r = 1:5
             for c = 1:5
