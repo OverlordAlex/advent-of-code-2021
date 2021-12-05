@@ -22,7 +22,7 @@ Scala
 Modula-3 ?
 
 #### Used once or twice
-Prolog
+~~SWI-Prolog~~
 Nim
 F#
 Javascript
@@ -80,5 +80,15 @@ I chose Julia because I seemed to recall all my data-processing friends loved it
 It's always nice when the brew-install just works (looking at you Factor). Running it was a breeze, and the interpreter was _generally_ helpful.
 
     $ julia day4.jl
+--------
+
+## Day 5 - SWI-Prolog (https://www.swi-prolog.org/)
+Not much to say about Prolog. I found it a lot easier than I remember. It's another language where I found that I wrote imperitive code more than taking advantage of the language. I was also surprised at how slow tail recursion ended up being - the first solution ran out of memory (1GB) and the second solution took a good 20 minutes to complete part2.
+
+Overall the problem itself was fairly straightforward, but I did feel like I missed having a hashmap. I'm particularly proud of my "zip" function. In fact the "helper" functions felt great to write and were a joy. As mentioned the only problem was the runtime of building a list of only duplicates. There's probably a more elegant solution.
+
+SWI-Prolog can't be praised enough for making Prolog easy to get into, run, and use. Slight pain getting to run to/from file without dropping into an interpreter though.
+
+    $ swipl -g main -t halt day5.pl
 --------
 
