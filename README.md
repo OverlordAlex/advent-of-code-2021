@@ -13,6 +13,7 @@ For each language I'll be posting my thoughts about
 ~~4tran~~
 ~~COBOL~~
 ~~Julia~~
+~~Dyalog APL~~
 BASIC
 Lua
 Raku? (was Perl)
@@ -92,3 +93,14 @@ SWI-Prolog can't be praised enough for making Prolog easy to get into, run, and 
     $ swipl -g main -t halt day5.pl
 --------
 
+## Day 6 - Dyalog APL (https://www.dyalog.com/)
+An APL based language was actually very interesting to use! I think I was just too dumb to get loops working - the syntax described online (and even in the IDE) straight up didn't work for me. Just imagine the 256 lines in the middle are instead wrapped in a :Repeat block. No ways I will use a pure APL flavour in the future - verbose commands > terse code pages.
+
+Solving the problem essentially tested array rotation, which is what made an array-based language so natural to use. I had some precision problems with large numbers so setting the floating point precision higher as well as the printing size to avoid scientific notation.
+
+Seems like you cant run Dyalog through the command line? At least it was easy to install and the IDE symbol explenations are pretty great. Error messages totally unhelpful.
+
+    To run: open Dyalog, copy-paste the command block in,
+      make sure to pass input like:
+        input←1,1,1,2,1,5,1...
+--------
