@@ -1,0 +1,14 @@
+# Part1 (4bytes)
+ÅmαO
+# Åm  # Median
+# α   #  which is subtracted from the stack
+# O   # sum
+
+# Part2 (9bytes)
+ÅAïα1+2cO
+# ÅA    # Mean
+# ï     #  drop decimal (floor). NOTE: not sure why round doesn't give correct solution?
+# α     #   subtract from the stack  
+# 1+    # add 1 to everything
+# 2c    #  binomial choose 2 (triangle number)  
+# O     # sum
