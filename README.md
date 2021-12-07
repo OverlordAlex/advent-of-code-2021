@@ -14,6 +14,7 @@ For each language I'll be posting my thoughts about
 ~~COBOL~~
 ~~Julia~~
 ~~Dyalog APL~~
+~~05AB1E~~
 BASIC
 Lua
 Raku? (was Perl)
@@ -104,3 +105,16 @@ Seems like you cant run Dyalog through the command line? At least it was easy to
       make sure to pass input like:
         input←1,1,1,2,1,5,1...
 --------
+
+## Day 7 - 05AB1E (https://github.com/Adriandmen/05AB1E)
+A stack-based golfing language, it's still in active use which means the operations chosen were modern, and input/output are treated way better than some of the other languages. Overall I enjoyed this more than Dyalog, and I think it was due to the intuitive nature of the stack over the array, as well as a much more sensible code page.
+
+It was important to recognise the mathematical operators in the problem - median, mean, and the triangle numbers. All of these are natively built into 05AB1E making the challenge a breeze. One trouble I had which was with my solution logic, is that I was unsure whether to use floor, ceil, or round - I got different results with the example input and my own input.
+
+I did not attempt to run 05AB1E locally since the instructions looked too daunting for just AoC, but I instead used https://tio.run/#osabie. It worked flawlessly (once I figured out that the default is LEGACY 05AB1E, switching to the mainstream version solved everything).
+
+    Go to Try It Online (https://tio.run/#osabie)
+    Copy the code into the `Code` section
+    Copy input into the `Input` section, and wrap it as an array (`[..]`)
+--------
+
