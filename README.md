@@ -1,4 +1,4 @@
-# Advent Of Code 2021
+r Advent Of Code 2021
 Doing advent of code in different languages.
 
 > Advent of Code is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like. https://adventofcode.com/2021/
@@ -124,7 +124,7 @@ xxx
 
 xxx
 
-   curry
+    curry
 --------
 
 ## Day 9 - Lua (https://www.lua.org/)
@@ -134,7 +134,7 @@ I think this is the first day where I could use my solution from part1 to kickst
 
 Lua was trivial to install, and the documentation is actually really great!
 
-   $ lua day9.lua
+    $ lua day9.lua
 --------
 
 ## Day 10 - F#  (https://fsharp.org/)
