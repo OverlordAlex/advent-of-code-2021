@@ -25,8 +25,8 @@ Modula-3 ?
 
 #### Used once or twice
 ~~SWI-Prolog~~
+~~F#~~
 Nim
-F#
 Javascript
 Go
 Dart
@@ -51,7 +51,6 @@ Fortran doesn't have dynamic memory (go figure), so we really have to stream the
 Installing gfortran on a mac was awful, but only because it required xcode, and xcode required a whole new OS upgrade. Once installed compiling and running was a breeze.
 
     $ gfortran day1.f -o day1.out && ./day1.out
-
 --------
 
 ## Day 2 - AWK (https://www.gnu.org/software/gawk/manual/gawk.html)
@@ -118,3 +117,32 @@ I did not attempt to run 05AB1E locally since the instructions looked too daunti
     Copy input into the `Input` section, and wrap it as an array (`[..]`)
 --------
 
+## Day 8 - TBD
+Attempting Curry
+
+xxx
+
+xxx
+
+   curry
+--------
+
+## Day 9 - TBD
+Thinking maybe lua
+
+xxx
+
+xxx
+
+   lua?
+--------
+
+## Day 10 - F#  (https://fsharp.org/)
+F-sharp remains my favourite functional language by a country mile. It's got the right mix of first class functions, types, and pattern matching that is really a joy to write. For my imperitive background it just makes sense.
+
+The only hiccup I had was putting functions below their first reference, a big nono the compiler complained about. Also had to crib a string reverse function from a blog post. Part2 got me with integer overflow, again. Still waiting for a warning from some language about this.
+
+Installing F# was easy - it's still a relatively modern language that just required .Net (annoying, but eh)
+
+    $ dotnet fsi day10.fsx
+--------
