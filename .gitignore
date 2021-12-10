@@ -4,5 +4,9 @@
 # AoC
 *.in
 
-# Fortran
+# Fortran + Others
 *.out
+
+# Helper script for running Curry docker image
+runcurry.sh
+.curry*

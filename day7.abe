@@ -1,7 +1,7 @@
 # Part1 (4bytes)
 ÅmαO
 # Åm  # Median
-# α   #  which is subtracted from the stack
+# α   #  which is subtracted from the stack (absolute)
 # O   # sum
 
 # Part2 (9bytes)
