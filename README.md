@@ -15,8 +15,8 @@ For each language I'll be posting my thoughts about
 ~~Julia~~
 ~~Dyalog APL~~
 ~~05AB1E~~
+~~Lua~~
 BASIC
-Lua
 Raku? (was Perl)
 Smalltalk
 Ballerina ?
@@ -127,14 +127,14 @@ xxx
    curry
 --------
 
-## Day 9 - TBD
-Thinking maybe lua
+## Day 9 - Lua (https://www.lua.org/)
+Lua actually turned out pretty cool; I liked the table data structure (except for lacking a coherent length function, and the 1-indexing). Another thing was a lack of "continue" statement. Otherwise a very easy language to use and I regret avoiding it when doing game programming as a kid.
 
-xxx
+I think this is the first day where I could use my solution from part1 to kickstart part2. I had to do some stringyfying to get the table to work as a hashmap/set correctly, however it was still _blazingly_ fast. I didn't want to temp the memory management gods so I went with managing the "stack" myself. 
 
-xxx
+Lua was trivial to install, and the documentation is actually really great!
 
-   lua?
+   $ lua day9.lua
 --------
 
 ## Day 10 - F#  (https://fsharp.org/)
