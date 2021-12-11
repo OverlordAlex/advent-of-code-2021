@@ -16,6 +16,7 @@ For each language I'll be posting my thoughts about
 ~~Dyalog APL~~
 ~~05AB1E~~
 ~~Lua~~
+~~D~~
 BASIC
 Raku? (was Perl)
 Smalltalk
@@ -145,4 +146,14 @@ The only hiccup I had was putting functions below their first reference, a big n
 Installing F# was easy - it's still a relatively modern language that just required .Net (annoying, but eh)
 
     $ dotnet fsi day10.fsx
+--------
+
+## Day 11 - D (https://dlang.org/)
+D actually turned out to be kind of cool. I like the alias functionality and the autotyping (which remains strict). The only minor gripe is the semi-colon line endings. Passing structs around felt cool.
+
+Overall I felt like I could have been more functional. I also avoided using pointers which made it much less efficient, but it was at least still fast. Part2 should have been done with a while-loop, but I was lazy and the interations were low.
+
+Another modern language that was a breeze to install and run. Documentation is also amazing. Google was the WORST for this - no google, "Dlang" should *not* be corrected to "golang".
+
+    $ dmd -run day11.d
 --------
