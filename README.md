@@ -27,11 +27,11 @@ Modula-3 ?
 #### Used once or twice
 ~~SWI-Prolog~~
 ~~F#~~
+~~Ruby~~
 Nim
 Javascript
 Go
 Dart
-Ruby
 PHP
 Swift
 Rust
@@ -157,3 +157,14 @@ Another modern language that was a breeze to install and run. Documentation is a
 
     $ dmd -run day11.d
 --------
+
+## Day 12 - Ruby (https://www.ruby-lang.org/)
+I enjoy Ruby about as much as Python. After some of the more terse languages it felt almost _too_ verbose, but I think it's met the stated goal of a natural syntax that's easy to read.
+
+Shadowing the string class to add a new method was nice to do, however the declaration scares me as there was no indication that I was overriding a type... I also felt the lack of an elvis operator, even though I liked the -if and -unless syntax.
+
+Ruby came pre-installed, albeit not the latest (as is tradition). Probably the easiest to write and run so far.
+
+    $ ruby day12.rb
+--------
+
