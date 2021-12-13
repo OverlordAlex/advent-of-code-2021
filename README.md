@@ -28,11 +28,11 @@ Modula-3 ?
 ~~SWI-Prolog~~
 ~~F#~~
 ~~Ruby~~
+~~PHP~~
 Nim
 Javascript
 Go
 Dart
-PHP
 Swift
 Rust
 Haskell
@@ -168,3 +168,12 @@ Ruby came pre-installed, albeit not the latest (as is tradition). Probably the e
     $ ruby day12.rb
 --------
 
+## Day 13 - PHP (https://www.php.net/)
+This is my second time using PHP and I'm actually starting to like it more and more. I'm coming around on prefacing all variables with a marker, but still those line endings...
+
+I'm not sure if I missed something, but the challenge was extremely easy for Day13 (perhaps due to the output requirements?). PHP comes with pleeenty of builtins so it was trivial to solve. Shoutout to my homie `implode` for the coolest name.
+
+I was surprised to find that PHP was not installed by default, however installing and running it was trivial. Last year I had a problem with the documentation recommending a super out of date version, however that seems to have been fixed!
+
+    $ php day13.php
+--------

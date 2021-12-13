@@ -17,6 +17,8 @@ while (($line = fgets($fileHandle)) !== false) {
     $folds[] = [$fold[1], intval($fold[2])]; 
 }
 
+fclose($fileHandle);
+
 // do one fold
 function foldPaper($axis, $value, &$coords) {
     if ($axis == "x") {
@@ -59,6 +61,4 @@ foreach ($coords as $coord) {
 foreach ($grid as $row) {
     echo implode("", $row)."\n";
 }
-
-fclose($fileHandle);
 ?>
