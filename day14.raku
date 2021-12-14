@@ -2,6 +2,11 @@ my $fh = open "day14.in";
 
 # input string
 my $input = $fh.get;
+my %chrs;
+for 0..($input.chars - 2) {
+    my $pair = $input.substr($_, 2);
+    %chrs{$pair} = (%chrs{$pair} // 0) + 1; 
+}
 
 #blank line
 $fh.get;
@@ -10,30 +15,37 @@ $fh.get;
 my %rules;
 while my $line = $fh.get {
     my ($pair, $insert) = $line.split(" -> ");
-    $insert = $pair.substr(0,1) ~ ";" ~ $insert ~ ";" ~ $pair.substr(1,1);
-    %rules{$pair} = $insert;
+    my $first = $pair.substr(0, 1) ~ $insert;
+    my $second = $insert ~ $pair.substr(1, 1);
+    %rules{$pair} = ($first, $second, $insert);
 }
 $fh.close;
 
 for 1..40 {
-    for %rules.keys -> $key {
-        my $old = "";
-        while $old ne $input {
-            $old = $input;
-            $input = $input.subst($key, %rules{$key}, :g);
-        }
+    my %newChrs;
+    for %chrs -> $chr {
+        my ($first, $second, $insert) = %rules{$chr.key};
+        %newChrs{$first} = (%newChrs{$first} // 0) + $chr.value;
+        %newChrs{$second} = (%newChrs{$second} // 0) + $chr.value;
     }
-    $input = $input.subst(";", "", :g);
+    %chrs = %newChrs;
 }
-#say $input.chars;
-say "boo";
 
 my %count;
-for 0..($input.chars - 1) {
-    my $c = $input.substr($_, 1);
-    %count{$c} = (%count{$c} // 0) + 1; 
+for %chrs -> $chr {
+    my ($first, $second);
+    $first = $chr.key.substr(0, 1);
+    $second = $chr.key.substr(1, 1);
+
+    %count{$first} = (%count{$first} // 0) + $chr.value;
+    %count{$second} = (%count{$second} // 0) + $chr.value;
 }
-#say %count.maxpairs;
-#say %count.minpairs;
-#my $x = %count.maxpairs.first.value - %count.minpairs.first.value;
-#say $x;
+# first and last started at a disadvantage, then we really have seen 2x of everything
+%count{$input.substr(0, 1)} += 1;
+%count{$input.substr($input.chars - 1, 1)} += 1;
+for %count -> $cnt {
+    $cnt.value = $cnt.value / 2;
+}
+
+my $result = %count.maxpairs.first.value - %count.minpairs.first.value;
+say $result;
