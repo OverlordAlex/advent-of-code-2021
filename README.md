@@ -17,8 +17,8 @@ For each language I'll be posting my thoughts about
 ~~05AB1E~~
 ~~Lua~~
 ~~D~~
+~~Raku(Perl6)~~
 BASIC
-Raku? (was Perl)
 Smalltalk
 Ballerina ?
 Scala
@@ -177,3 +177,14 @@ I was surprised to find that PHP was not installed by default, however installin
 
     $ php day13.php
 --------
+
+## Day 14 - Raku (https://raku.org/)
+In case you missed it, the language maintainers felt that Perl6 was so incompatible with Perl that it deserves it's own langauge, hence Raku. The language is rather interesting - denoting type with a symbol could be more useful if IDEs don't exist (and I wrote in vim, yet still missed nothing). It feels like the language is right at the edge of something, but I'm not sure what...
+
+AoC lulled me into a false sense of security - after verifying that Raku used BigInts by default (cool) I went ahead and decided to write it the brute-force way. Turns out, Rakudo (VM ecosystem running Raku) does very funny things when you push it. I got every sort of fault under the sun - sig bus, segmentation, heap overflows, obscure memory problems, you name it. Every run was different! So after going back and writing the proper solution it worked like a charm. 
+
+The compiler was actually rather helpful with its' suggestions! It was also way faster than I was expecting. Only hiccup is making sure you install the right brew package on mac, and the pain of backing out if you get it wrong...
+
+    $ raku day14.raku
+--------
+
